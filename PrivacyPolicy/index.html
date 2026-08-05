@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Flip Pomodoro</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #ffffff;
+            --text-secondary: #e2e8f0; 
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --border-color: #334155;
+            --btn-bg: #334155;
+            --btn-active: #38bdf8;
+            --btn-active-text: #0f172a;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+            margin: 20px 0;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        
+        .logo-wrapper {
+            display: inline-block;
+            position: relative;
+            padding: 8px;
+        }
+
+        .logo-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 110px;
+            height: 110px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 50%;
+            filter: blur(16px);
+            z-index: 1;
+        }
+
+        .logo {
+            width: 180px;
+            height: 180px;
+            position: relative;
+            z-index: 2;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-top: 12px;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .app-subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .lang-btn {
+            background-color: var(--btn-bg);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn.active {
+            background-color: var(--btn-active);
+            color: var(--btn-active-text);
+            border-color: var(--btn-active);
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .effective-date {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            font-size: 0.9rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 8px 16px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--accent-color);
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+
+        p, ul, li {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-box {
+            background-color: rgba(56, 189, 248, 0.08);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 16px;
+            border-radius: 10px;
+            margin-top: 12px;
+            color: var(--text-primary);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .logo {
+                width: 140px;
+                height: 140px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-wrapper">
+                <svg class="logo" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="bgGradient" cx="54" cy="54" r="76.4" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#334155"/>
+                            <stop offset="50%" stop-color="#1E293B"/>
+                            <stop offset="100%" stop-color="#0F172A"/>
+                        </radialGradient>
+                    </defs>
+                    <path d="M 54,21 A 33,33 0 1,1 54,87 A 33,33 0 1,1 54,21" fill="url(#bgGradient)"/>
+                    <path fill="#ffffff" d="
+                        M 54.729,66.052 A 2.844,2.844 0 1,1 54.729,71.740 A 2.844,2.844 0 1,1 54.729,66.052
+                        M 48.136,46.385 A 7.355,7.281 0 0,0 33.427,46.385 L 37.511,46.385 A 3.271,3.240 0 0,1 44.052,46.385 Z
+                        M 33.421,61.604 A 7.355,7.276 0 0,0 48.131,61.604 L 44.047,61.604 A 3.271,3.240 0 0,1 37.505,61.604 Z
+                        M 76.031,46.385 A 7.355,7.281 0 0,0 61.328,46.385 L 65.407,46.385 A 3.271,3.240 0 0,1 71.948,46.385 Z
+                        M 61.323,61.604 A 7.355,7.276 0 0,0 76.031,61.604 L 71.948,61.604 A 3.271,3.240 0 0,1 65.407,61.604 Z" />
+                    <path fill="#ffffff" d="
+                        M 33.432,46.328 L 37.511,46.328 L 37.511,52.995 L 33.432,52.995 Z
+                        M 33.432,55.011 L 37.511,55.011 L 37.511,61.677 L 33.432,61.677 Z
+                        M 44.052,46.328 L 48.136,46.328 L 48.136,52.995 L 44.052,52.995 Z
+                        M 44.052,55.011 L 48.136,55.011 L 48.136,61.677 L 44.052,61.677 Z
+                        M 61.328,46.328 L 65.412,46.328 L 65.412,52.995 L 61.328,52.995 Z
+                        M 61.328,55.011 L 65.412,55.011 L 65.412,61.677 L 61.328,61.677 Z
+                        M 71.948,46.328 L 76.031,46.328 L 76.031,52.995 L 71.948,52.995 Z
+                        M 71.948,55.011 L 76.031,55.011 L 76.031,61.677 L 71.948,61.677 Z" />
+                </svg>
+            </div>
+            <h1>Flip Pomodoro</h1>
+            <div class="app-subtitle">Privacy Policy / Chính sách quyền riêng tư</div>
+            
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" onclick="switchLang('vi')">Tiếng Việt</button>
+            </div>
+        </header>
+
+        <!-- ENGLISH CONTENT -->
+        <div id="lang-en" class="content-section active">
+            <div class="effective-date">Effective Date: August 05, 2026</div>
+
+            <p>This Privacy Policy explains how <strong>Flip Pomodoro</strong> ("the App") handles your information when you use our service. We are committed to protecting your privacy.</p>
+
+            <h2>1. Collection and Use of Personal Data</h2>
+            <p>The App <strong>does not collect, store, request, or share any personally identifiable information</strong> (such as your name, email address, phone number, location, or personal IP address). You can use the App completely anonymously.</p>
+
+            <h2>2. Device Permissions</h2>
+            <p>The App <strong>does not require any special or sensitive permissions</strong> on your Android device (such as access to camera, microphone, contacts, location, or external storage).</p>
+
+            <h2>3. Third-Party Services</h2>
+            <p>To monitor performance, track bugs, and improve user experience, the App utilizes third-party analytics services provided by Google:</p>
+            <ul>
+                <li><strong>Google Analytics for Firebase:</strong> Collects anonymous usage statistics (such as active user counts, session durations, device models, and OS versions) to help us understand how the App is used.</li>
+                <li><strong>Firebase Crashlytics:</strong> Collects crash reports and technical diagnostic data when an error occurs, helping us quickly identify and fix issues.</li>
+            </ul>
+            <p>This data is automatically collected in an anonymized manner and is governed by Google's Privacy Policy. You can learn more at: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy & Terms</a>.</p>
+
+            <h2>4. Advertising and In-App Purchases</h2>
+            <ul>
+                <li><strong>Advertisements:</strong> The App is entirely ad-free and does not integrate any third-party ad networks.</li>
+                <li><strong>Purchases:</strong> The App does not contain any in-app purchases or financial transactions.</li>
+            </ul>
+
+            <h2>5. Children's Privacy</h2>
+            <p>The App <strong>is not directed to children under the age of 13</strong>. We do not knowingly collect personal information from children.</p>
+
+            <h2>6. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. Any changes will be effective immediately upon posting the updated policy.</p>
+
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions or suggestions regarding this Privacy Policy, please contact us at:</p>
+            <div class="contact-box">
+                📧 Email: <a href="mailto:abc@gmail.com">abc@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- VIETNAMESE CONTENT -->
+        <div id="lang-vi" class="content-section">
+            <div class="effective-date">Ngày áp dụng: 05 tháng 08 năm 2026</div>
+
+            <p>Chính sách Quyền riêng tư này giải thích cách ứng dụng <strong>Flip Pomodoro</strong> (gọi tắt là "Ứng dụng") xử lý thông tin của bạn khi bạn sử dụng dịch vụ của chúng tôi. Chúng tôi cam kết bảo vệ quyền riêng tư của bạn.</p>
+
+            <h2>1. Thu thập và Sử dụng Dữ liệu Cá nhân</h2>
+            <p>Ứng dụng <strong>không thu thập, lưu trữ, yêu cầu hoặc chia sẻ bất kỳ thông tin nhận dạng cá nhân nào</strong> của người dùng (như tên, email, số điện thoại, vị trí hoặc địa chỉ IP cá nhân). Bạn có thể sử dụng ứng dụng hoàn toàn ẩn danh.</p>
+
+            <h2>2. Quyền truy cập thiết bị</h2>
+            <p>Ứng dụng <strong>không yêu cầu bất kỳ quyền truy cập đặc biệt nào</strong> trên thiết bị Android của bạn (như camera, micro, danh bạ, vị trí hoặc bộ nhớ ngoài).</p>
+
+            <h2>3. Dịch vụ của bên thứ ba (Third-Party Services)</h2>
+            <p>Để cải thiện hiệu suất ứng dụng, theo dõi lỗi và nâng cao trải nghiệm người dùng, Ứng dụng có sử dụng các dịch vụ phân tích từ bên thứ ba do Google cung cấp:</p>
+            <ul>
+                <li><strong>Google Analytics for Firebase:</strong> Thu thập các dữ liệu thống kê không định danh (như số lượng người dùng active, thời lượng sử dụng, loại thiết bị, hệ điều hành) để giúp chúng tôi hiểu cách ứng dụng hoạt động.</li>
+                <li><strong>Firebase Crashlytics:</strong> Thu thập báo cáo về sự cố (crash report) và thông tin kỹ thuật của thiết bị tại thời điểm ứng dụng gặp lỗi để giúp chúng tôi khắc phục sự cố nhanh chóng.</li>
+            </ul>
+            <p>Các dữ liệu này được thu thập tự động dưới dạng ẩn danh và tuân thủ theo Chính sách Quyền riêng tư của Google. Bạn có thể tham khảo thêm tại: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy & Terms</a>.</p>
+
+            <h2>4. Quảng cáo và Thanh toán</h2>
+            <ul>
+                <li><strong>Quảng cáo:</strong> Ứng dụng hoàn toàn không chứa bất kỳ quảng cáo nào từ các mạng quảng cáo bên thứ ba.</li>
+                <li><strong>Thanh toán:</strong> Ứng dụng không chứa tính năng mua hàng hoặc thanh toán trong ứng dụng (In-app Purchase).</li>
+            </ul>
+
+            <h2>5. Quyền riêng tư của Trẻ em (Children's Privacy)</h2>
+            <p>Ứng dụng <strong>không hướng tới đối tượng là trẻ em dưới 13 tuổi</strong>. Chúng tôi không cố ý thu thập bất kỳ thông tin nào từ trẻ em.</p>
+
+            <h2>6. Thay đổi đối với Chính sách Quyền riêng tư này</h2>
+            <p>Chính sách này có thể được cập nhật theo thời gian để phản ánh các thay đổi trong ứng dụng. Mọi thay đổi sẽ có hiệu lực ngay khi được đăng tải.</p>
+
+            <h2>7. Liên hệ</h2>
+            <p>Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào về Chính sách Quyền riêng tư này, vui lòng liên hệ với chúng tôi qua email:</p>
+            <div class="contact-box">
+                📧 Email: <a href="mailto:abc@gmail.com">test@gmail.com</a>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 Flip Pomodoro. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+
+            if (lang === 'en') {
+                document.getElementById('lang-en').classList.add('active');
+                event.target.classList.add('active');
+            } else {
+                document.getElementById('lang-vi').classList.add('active');
+                event.target.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
